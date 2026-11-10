@@ -1,0 +1,6 @@
+<!DOCTYPE html><html lang="gu"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ઉચ્ચતર પગાર</title></head><body style="margin:0;background:#17375e">
+<script>addEventListener('load',function(){setTimeout(async function(){var h='',o=null;
+try{o=JSON.parse(localStorage.getItem('uph_ota')||'null')}catch(e){}
+try{h=await(await fetch('app.html')).text();var m=/BUILD_V=(\d+)/.exec(h);if(o&&o.h&&o.v>(m?+m[1]:0))h=o.h}catch(e){if(o&&o.h)h=o.h}
+if(!h){document.body.innerHTML='<p style="color:#fff;padding:20px">એપ ખૂલી શકી નથી.</p>';return}
+window.__ldr=1;document.open();document.write(h);document.close()},0)})</script></body></html>
